@@ -15,6 +15,7 @@
     <div class="tab-bar" role="tablist" aria-label="Workspace tabs">
       <button class="tab active" role="tab" aria-selected="true"  data-tab="workspace">Workspace</button>
       <button class="tab"        role="tab" aria-selected="false" data-tab="projects">Projects</button>
+      <button class="tab"        role="tab" aria-selected="false" data-tab="ai-assistant">AI Assistant</button>
       <button class="tab"        role="tab" aria-selected="false" data-tab="settings">Settings</button>
     </div>
 
@@ -41,6 +42,33 @@
       <section id="projects" class="tab-panel" role="tabpanel" aria-label="Projects">
         <h2>Projects</h2>
         <p>Your projects will appear here.</p>
+      </section>
+
+      <section id="ai-assistant" class="tab-panel" role="tabpanel" aria-label="AI Assistant">
+        <h2>AI Assistant</h2>
+        <p>Ask me anything about project management, PMI standards, certifications, or best practices.</p>
+        <div class="ai-chat">
+          <div class="ai-messages" id="ai-messages" aria-live="polite" aria-label="Chat messages">
+            <div class="ai-message ai-message--bot">
+              <span class="ai-message__avatar" aria-hidden="true">🤖</span>
+              <div class="ai-message__bubble">
+                Hello! I'm your PMI AI Assistant. I can help you with project management questions, PMI certifications, PMBOK principles, risk management, and more. What would you like to know?
+              </div>
+            </div>
+          </div>
+          <form class="ai-input-form" id="ai-input-form" autocomplete="off">
+            <label for="ai-input" class="sr-only">Ask the AI Assistant</label>
+            <input
+              type="text"
+              id="ai-input"
+              class="ai-input"
+              placeholder="Ask a project management question…"
+              aria-label="Ask the AI Assistant"
+              required
+            />
+            <button type="submit" class="ai-send-btn" aria-label="Send">Send</button>
+          </form>
+        </div>
       </section>
 
       <section id="settings" class="tab-panel" role="tabpanel" aria-label="Settings">
