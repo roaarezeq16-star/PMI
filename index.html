@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PMI – Workspace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1 class="app-title">PMI</h1>
+    </header>
+
+    <div class="tab-bar" role="tablist" aria-label="Workspace tabs">
+      <button class="tab active" role="tab" aria-selected="true"  data-tab="workspace">Workspace</button>
+      <button class="tab"        role="tab" aria-selected="false" data-tab="projects">Projects</button>
+      <button class="tab"        role="tab" aria-selected="false" data-tab="settings">Settings</button>
+    </div>
+
+    <main class="tab-content">
+      <section id="workspace" class="tab-panel active" role="tabpanel" aria-label="Workspace">
+        <h2>Workspace</h2>
+        <p>Welcome to your workspace. Use this area to manage your tasks, notes, and project resources.</p>
+        <div class="workspace-grid">
+          <div class="workspace-card">
+            <h3>Tasks</h3>
+            <p>0 open tasks</p>
+          </div>
+          <div class="workspace-card">
+            <h3>Notes</h3>
+            <p>No notes yet</p>
+          </div>
+          <div class="workspace-card">
+            <h3>Recent Activity</h3>
+            <p>No recent activity</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="tab-panel" role="tabpanel" aria-label="Projects">
+        <h2>Projects</h2>
+        <p>Your projects will appear here.</p>
+      </section>
+
+      <section id="settings" class="tab-panel" role="tabpanel" aria-label="Settings">
+        <h2>Settings</h2>
+        <p>Configure your workspace preferences here.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
